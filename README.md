@@ -1,4 +1,8 @@
-= plissken
+=======
+plissken
+========
+
+Snakify your camel keys
 
 Have you ever needed to automatically convert JSON-style camelBack or CamelCase hash keys into more Rubyish snake_case?
 
