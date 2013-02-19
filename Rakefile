@@ -17,8 +17,16 @@ Jeweler::Tasks.new do |gem|
   gem.name = "plissken"
   gem.homepage = "http://github.com/futurechimp/plissken"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Snakify your camel keys when working with JSON APIs}
+  gem.description = %Q{
+    Have you ever needed to automatically convert JSON-style camelBack or
+    CamelCase hash keys into more Rubyish snake_case?
+
+    Plissken to the rescue.
+
+    This gem recursively converts all camelBack or CamelCase keys in a hash
+    structure to snake_case.
+  }
   gem.email = "dave.hrycyszyn@headlondon.com"
   gem.authors = ["Dave Hrycyszyn"]
   # dependencies defined in Gemfile
@@ -30,14 +38,6 @@ Rake::TestTask.new(:test) do |test|
   test.libs << 'lib' << 'test'
   test.pattern = 'test/**/test_*.rb'
   test.verbose = true
-end
-
-require 'rcov/rcovtask'
-Rcov::RcovTask.new do |test|
-  test.libs << 'test'
-  test.pattern = 'test/**/test_*.rb'
-  test.verbose = true
-  test.rcov_opts << '--exclude "gems/*"'
 end
 
 task :default => :test
