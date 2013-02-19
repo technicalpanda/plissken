@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = "plissken"
-  s.version = ""
+  s.version = "0.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Dave Hrycyszyn"]
@@ -23,8 +23,10 @@ Gem::Specification.new do |s|
     "LICENSE.txt",
     "README.md",
     "Rakefile",
+    "VERSION",
     "lib/plissken.rb",
     "lib/plissken/ext/hash/to_snake_keys.rb",
+    "plissken.gemspec",
     "test/helper.rb",
     "test/plissken/ext/hash/to_snake_keys_test.rb",
     "test/test_plissken.rb"
