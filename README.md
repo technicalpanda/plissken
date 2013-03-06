@@ -16,7 +16,7 @@ snaked_hash = my_hash.to_snake_keys
 # => {"first_key" => 1, "foo_bars" => [{"baz_baz" => "value"}, {"blah_blah" => "value"}]}
 ```
 
-Plissken works on either string keys or symbolized keys. It has no dependencies, as has its own `underscore` method lifted out of ActiveSupport.
+Plissken works on either string keys or symbolized keys. It has no dependencies, as it has its own `underscore` method lifted out of ActiveSupport.
 
 ## Limitations
 
