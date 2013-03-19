@@ -21,7 +21,7 @@ Plissken works on either string keys or symbolized keys. It has no dependencies,
 ## Limitations
 
 * Your keys must be camelBack or CamelCase. The key "Foo Bar" will output as "foo bar".
-* Unlike the original Snake Plissken in the seminal film [Escape from New York](http://en.wikipedia.org/wiki/Escape_from_New_York), the plissken gem is non-destructive. There is no Hash#to_snake_keys! form.
+* Unlike the original Snake Plissken in the seminal film [Escape from New York](http://en.wikipedia.org/wiki/Escape_from_New_York), the plissken gem is non-destructive. There is no `Hash#to_snake_keys!` form.
 
 # Going the other way
 
