@@ -23,6 +23,11 @@ Plissken works on either string keys or symbolized keys. It has no dependencies,
 * Your keys must be camelBack or CamelCase. The key "Foo Bar" will output as "foo bar".
 * Unlike the original Snake Plissken in the seminal film [Escape from New York](http://en.wikipedia.org/wiki/Escape_from_New_York), the plissken gem is non-destructive. There is no Hash#to_snake_keys! form.
 
+# Going the other way
+
+If you've already got `snake_case` and need to `CamelCase` it, you are encouraged to try
+the [Awrence](http://github.com/futurechimp/awrence) gem.
+
 ## Contributing to plissken
 
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
