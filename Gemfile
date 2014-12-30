@@ -8,6 +8,7 @@ gem 'symbolize'
 # Include everything needed to run rake, tests, features, etc.
 group :development do
   # gem 'debugger'
+  gem 'rspec'
   gem 'minitest', '>= 0', :require => 'minitest/spec'
   gem 'rdoc', '~> 3.12'
   gem 'bundler'
