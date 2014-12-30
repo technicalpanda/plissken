@@ -2,6 +2,9 @@
 
 require 'rubygems'
 require 'bundler'
+require 'rspec/core/rake_task'
+RSpec::Core::RakeTask.new('spec')
+
 begin
   Bundler.setup(:default, :development)
 rescue Bundler::BundlerError => e
@@ -40,7 +43,7 @@ Rake::TestTask.new(:test) do |test|
   test.verbose = true
 end
 
-task :default => :test
+task :default => :spec
 
 require 'rdoc/task'
 Rake::RDocTask.new do |rdoc|

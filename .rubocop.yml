@@ -1,0 +1,10 @@
+Style/HashSyntax:
+  EnforcedStyle: hash_rockets
+  SupportedStyles:
+    - ruby19
+    - hash_rockets
+
+AllCops:
+ Exclude:
+   - plissken.gemspec
+   - Rakefile

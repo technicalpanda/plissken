@@ -11,6 +11,7 @@ This gem recursively converts all camelBack or CamelCase keys in a hash structur
 ## Usage
 
 ```ruby
+gem 'plissken'
 my_hash = {"firstKey" => 1, "fooBars" => [{"bazBaz" => "value"}, {"blahBlah" => "value"}]}
 snaked_hash = my_hash.to_snake_keys
 # => {"first_key" => 1, "foo_bars" => [{"baz_baz" => "value"}, {"blah_blah" => "value"}]}

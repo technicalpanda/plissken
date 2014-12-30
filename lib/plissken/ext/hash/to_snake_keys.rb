@@ -1,5 +1,4 @@
 class Hash
-
   # Recursively converts CamelCase and camelBack JSON-style hash keys to
   # Rubyish snake_case, suitable for use during instantiation of Ruby
   # model attributes.
@@ -9,7 +8,7 @@ class Hash
       when Array
         value.map { |v| to_snake_keys(v) }
       when Hash
-        Hash[value.map { |k, v| [underscore_key(k), to_snake_keys(v)] }]
+        Hash[value.map { |k, v| [underscore_key(k).to_sym, to_snake_keys(v)] }]
       else
         value
     end
@@ -34,5 +33,5 @@ class Hash
     tr("-", "_").
     downcase
   end
-
 end
+  
