@@ -1,5 +1,5 @@
 source 'http://rubygems.org'
-gem 'symbolize'
+gem 'symbolize', '~> 4.2'
 # Add dependencies required to use your gem here.
 # Example:
 #   gem "activesupport", ">= 2.3.5"
@@ -8,9 +8,8 @@ gem 'symbolize'
 # Include everything needed to run rake, tests, features, etc.
 group :development do
   # gem 'debugger'
-  gem 'rspec'
-  gem 'minitest', '>= 0', :require => 'minitest/spec'
+  gem 'rspec', '~> 3.1'
   gem 'rdoc', '~> 3.12'
-  gem 'bundler'
+  gem 'bundler', '~> 1.6'
   gem 'jeweler', '~> 2.0'
 end
