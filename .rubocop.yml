@@ -8,3 +8,4 @@ AllCops:
  Exclude:
    - plissken.gemspec
    - Rakefile
+   - test/helper
