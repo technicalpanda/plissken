@@ -10,8 +10,8 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib"]
-  s.authors = ["Dave Hrycyszyn"]
-  s.date = "2014-12-30"
+  s.authors = ["Dave Hrycyszyn", "Michael Chrisco"]
+  s.date = "2014-12-31"
   s.description = "\n    Have you ever needed to automatically convert JSON-style camelBack or\n    CamelCase hash keys into more Rubyish snake_case?\n\n    Plissken to the rescue.\n\n    This gem recursively converts all camelBack or CamelCase keys in a hash\n    structure to snake_case.\n  "
   s.email = "dave.hrycyszyn@headlondon.com"
   s.extra_rdoc_files = [
@@ -39,7 +39,7 @@ Gem::Specification.new do |s|
   ]
   s.homepage = "http://github.com/futurechimp/plissken"
   s.licenses = ["MIT"]
-  s.rubygems_version = "2.4.2"
+  s.rubygems_version = "2.2.2"
   s.summary = "Snakify your camel keys when working with JSON APIs"
 
   if s.respond_to? :specification_version then
