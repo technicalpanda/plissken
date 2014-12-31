@@ -31,7 +31,7 @@ Jeweler::Tasks.new do |gem|
     structure to snake_case.
   }
   gem.email = "dave.hrycyszyn@headlondon.com"
-  gem.authors = ["Dave Hrycyszyn"]
+  gem.authors = ["Dave Hrycyszyn", "Michael Chrisco"]
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
