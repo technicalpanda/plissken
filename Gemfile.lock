@@ -85,7 +85,7 @@ PLATFORMS
 
 DEPENDENCIES
   bundler
-  jeweler (~> 2.0.1)
+  jeweler (~> 2.0)
   minitest
   rdoc (~> 3.12)
   rspec

@@ -12,5 +12,5 @@ group :development do
   gem 'minitest', '>= 0', :require => 'minitest/spec'
   gem 'rdoc', '~> 3.12'
   gem 'bundler'
-  gem 'jeweler', '~> 2.0.1'
+  gem 'jeweler', '~> 2.0'
 end
