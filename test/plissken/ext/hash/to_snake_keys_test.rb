@@ -181,4 +181,4 @@ describe 'A Hash' do
       assert @snaked.keys.include? 'with spaces'
     end
   end
- end
+end

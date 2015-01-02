@@ -1,20 +1,19 @@
 require 'spec_helper'
 
-  require File.expand_path(File.dirname(__FILE__) + '/../../lib/plissken')
+require File.expand_path(File.dirname(__FILE__) + '/../../lib/plissken')
 
 RSpec.describe 'A Hash' do
   describe 'with camelBack keys' do
     describe 'which are JSON-style strings' do
       describe 'in the simplest case' do
-
-         let(:hash) { [{ 'firstKey' => 'fooBar' }] }
+        let(:hash) { [{ 'firstKey' => 'fooBar' }] }
 
         describe 'non-destructive snakification' do
           let(:snaked) { hash.map(&:to_snake_keys) }
           it 'snakifies the key' do
             expect(snaked.first).to have_key(:first_key)
           end
-          
+
           it 'leaves the key as a string' do
             expect(snaked.first.keys).to eq([:first_key])
           end
@@ -30,7 +29,8 @@ RSpec.describe 'A Hash' do
       end
 
       describe 'containing an array of other hashes' do
-          let(:hash) do {
+        let(:hash) do
+          {
             'appleType' => 'Granny Smith',
             'vegetableTypes' => [
               { 'potatoType' => 'Golden delicious' },
@@ -39,12 +39,12 @@ RSpec.describe 'A Hash' do
                 { 'billThePeanut' => 'sallyPeanut' },
                 { 'sammyThePeanut' => 'jillPeanut' }
               ] }
-            ]}
-          end
-          
+            ] }
+        end
+
         describe 'non-destructive snakification' do
-            subject(:snaked) { hash.to_snake_keys }
-      #
+          subject(:snaked) { hash.to_snake_keys }
+          #
           it 'recursively snakifies the keys on the top level of the hash' do
             expect(snaked.include?(:apple_type)).to be_truthy
             expect(snaked.include?(:vegetable_types)).to be_truthy
@@ -56,12 +56,12 @@ RSpec.describe 'A Hash' do
 
           it 'converts second-level keys' do
             expect(snaked[:vegetable_types].first)
-                .to have_key(:potato_type)
+              .to have_key(:potato_type)
           end
 
           it 'leaves second-level values alone' do
             expect(snaked[:vegetable_types].first)
-                .to have_value('Golden delicious')
+              .to have_value('Golden delicious')
           end
 
           it 'converts third-level keys' do
@@ -86,11 +86,10 @@ RSpec.describe 'A Hash' do
 
     describe 'which are symbols' do
       describe 'in the simplest case' do
-          let(:hash)  { { :firstKey => 'fooBar' } }
-
+        let(:hash)  { { :firstKey => 'fooBar' } }
 
         describe 'non-destructive snakification' do
-            subject(:snaked) { hash.to_snake_keys }
+          subject(:snaked) { hash.to_snake_keys }
 
           it 'snakifies the key' do
             expect(snaked).to have_key(:first_key)
@@ -109,20 +108,21 @@ RSpec.describe 'A Hash' do
           end
         end
       end
-    #
+      #
       describe 'containing an array of other hashes' do
-        let(:hash) do {
+        let(:hash) do
+          {
             :appleType => 'Granny Smith',
             :vegetableTypes => [
-                { :potatoType => 'Golden delicious' },
-                { :otherTuberType => 'peanut' },
-                { :peanutNamesAndSpouses => [
-                    { :billThePeanut => 'sallyPeanut' },
-                    { :sammyThePeanut => 'jillPeanut' }
-                ] }
-            ]}
+              { :potatoType => 'Golden delicious' },
+              { :otherTuberType => 'peanut' },
+              { :peanutNamesAndSpouses => [
+                { :billThePeanut => 'sallyPeanut' },
+                { :sammyThePeanut => 'jillPeanut' }
+              ] }
+            ] }
         end
-    #
+        #
         describe 'non-destructive snakification' do
           subject(:snaked) { hash.to_snake_keys }
           #
@@ -137,12 +137,12 @@ RSpec.describe 'A Hash' do
 
           it 'converts second-level keys' do
             expect(snaked[:vegetable_types].first)
-                .to have_key(:potato_type)
+              .to have_key(:potato_type)
           end
 
           it 'leaves second-level values alone' do
             expect(snaked[:vegetable_types].first)
-                .to have_value('Golden delicious')
+              .to have_value('Golden delicious')
           end
 
           it 'converts third-level keys' do
@@ -167,13 +167,11 @@ RSpec.describe 'A Hash' do
   end
 
   describe 'strings with spaces in them' do
-
-      let(:hash)  { { 'With Spaces' => 'FooBar' } }
-      subject { hash.to_snake_keys }
-
+    let(:hash)  { { 'With Spaces' => 'FooBar' } }
+    subject { hash.to_snake_keys }
 
     it "doesn't get snaked, although it does get downcased" do
-       is_expected.to have_key(:'with spaces')
+      is_expected.to have_key(:'with spaces')
     end
   end
 end
