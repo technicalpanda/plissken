@@ -173,12 +173,15 @@ describe 'A Hash' do
 
   describe 'strings with spaces in them' do
     before do
-      @hash = { 'With Spaces' => 'FooBar' }
+      @hash = { ' With Spaces ' => ' FooBar ' }
       @snaked = @hash.to_snake_keys
     end
 
     it "doesn't get snaked, although it does get downcased" do
       assert @snaked.keys.include? 'with spaces'
+    end
+    it 'should have value equal to FooBar' do
+      assert @snaked.values.include? 'FooBar'
     end
   end
 end
