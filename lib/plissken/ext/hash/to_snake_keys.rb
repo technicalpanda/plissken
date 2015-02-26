@@ -9,7 +9,9 @@ class Hash
     when Array
       value.map { |v| to_snake_keys(v) }
     when Hash
-      snake_hash(value)
+      snake_hash(value) 
+    when String
+      value.strip
     else
       value
     end
@@ -36,6 +38,7 @@ class Hash
       .gsub(/([A-Z]+)([A-Z][a-z])/, '\1_\2')
       .gsub(/([a-z\d])([A-Z])/, '\1_\2')
       .tr('-', '_')
+      .strip
       .downcase
   end
 end

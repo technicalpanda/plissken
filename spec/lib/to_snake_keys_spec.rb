@@ -167,11 +167,14 @@ RSpec.describe 'A Hash' do
   end
 
   describe 'strings with spaces in them' do
-    let(:hash)  { { 'With Spaces' => 'FooBar' } }
+    let(:hash)  { { ' With Spaces ' => ' FooBar ' } }
     subject { hash.to_snake_keys }
 
     it "doesn't get snaked, although it does get downcased" do
       is_expected.to have_key(:'with spaces')
+    end
+    it 'should have value equal to ' do
+      is_expected.to have_value('FooBar')
     end
   end
 end
