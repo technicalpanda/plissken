@@ -30,7 +30,6 @@ Gem::Specification.new do |s|
     "VERSION",
     "lib/plissken.rb",
     "lib/plissken/ext/hash/to_snake_keys.rb",
-    "plissken-0.3.0.gem",
     "plissken.gemspec",
     "spec/lib/to_snake_keys_spec.rb",
     "spec/spec_helper.rb",
