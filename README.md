@@ -1,5 +1,7 @@
 # Plissken
 
+[![Gem Version](https://badge.fury.io/rb/filta.svg)](https://badge.fury.io/rb/filta)
+
 Have you ever needed to automatically convert JSON-style `camelBack` or `CamelCase` hash keys into more Rubyish `snake_case`?
 
 Plissken to the rescue.
