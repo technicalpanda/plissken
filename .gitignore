@@ -49,3 +49,4 @@ pkg
 #*.rbc
 
 Gemfile.lock
+*.gem
