@@ -4,7 +4,7 @@ Have you ever needed to automatically convert JSON-style `camelBack` or `CamelCa
 
 Plissken to the rescue.
 
-This gem recursively converts all camelBack or CamelCase keys in a hash structure to snake_case.
+This gem recursively converts all camelBack or CamelCase keys in either a Hash structure, or an Array of Hashes, to snake_case.
 
 ## Installation
 
@@ -22,10 +22,20 @@ gem install plissken
 
 ## Usage
 
+On hashes:
+
 ```ruby
-my_hash = {"firstKey" => 1, "fooBars" => [{"bazBaz" => "value"}, {"blahBlah" => "value"}]}
+my_hash = { "firstKey" => 1, "fooBars" => [{ "bazBaz" => "value" }, { "blahBlah" => "value" }] }
 snaked_hash = my_hash.to_snake_keys
-# => {"first_key" => 1, "foo_bars" => [{"baz_baz" => "value"}, {"blah_blah" => "value"}]}
+# => { "first_key" => 1, "foo_bars" => [{ "baz_baz" => "value" }, { "blah_blah" => "value" }] }
+```
+
+On arrays:
+
+```ruby
+my_array_of_hashes = [{ "firstKey" => 1, "fooBars" => [{ "bazBaz" => "value" }, { "blahBlah" => "value" }] }]
+snaked_hash = my_array_of_hashes.to_snake_keys
+# => [{"first_key" => 1, "foo_bars" => [{ "baz_baz" => "value" }, { "blah_blah" => "value" }] }]
 ```
 
 Plissken works on either string keys or symbolized keys. It has no dependencies, as it has its own `underscore` method lifted out of ActiveSupport.
