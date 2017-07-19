@@ -52,5 +52,5 @@ the [Awrence](http://github.com/futurechimp/awrence) gem.
 
 ## Copyright
 
-Copyright (c) 2013 Dave Hrycyszyn. See LICENSE.txt for
+Copyright (c) 2017 Dave Hrycyszyn. See LICENSE.txt for
 further details.
