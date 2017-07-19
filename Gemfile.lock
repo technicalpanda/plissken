@@ -1,0 +1,32 @@
+PATH
+  remote: .
+  specs:
+    plissken (1.2.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    ansi (1.5.0)
+    builder (3.2.3)
+    hashie (3.5.6)
+    minitest (4.7.5)
+    minitest-reporters (0.14.24)
+      ansi
+      builder
+      minitest (>= 2.12, < 5.0)
+      powerbar
+    powerbar (1.0.18)
+      hashie (>= 1.1.0)
+    rake (12.0.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  minitest (~> 4.7)
+  minitest-reporters (~> 0.14)
+  plissken!
+  rake (~> 12.0)
+
+BUNDLED WITH
+   1.15.2
