@@ -1,6 +1,4 @@
-=======
-plissken
-========
+# Plissken
 
 Have you ever needed to automatically convert JSON-style `camelBack` or `CamelCase` hash keys into more Rubyish `snake_case`?
 
@@ -8,10 +6,23 @@ Plissken to the rescue.
 
 This gem recursively converts all camelBack or CamelCase keys in a hash structure to snake_case.
 
+## Installation
+
+Add this to your Gemfile:
+
+```ruby
+gem "plissken"
+```
+
+Or install it yourself as:
+
+```bash
+gem install plissken
+```
+
 ## Usage
 
 ```ruby
-gem 'plissken'
 my_hash = {"firstKey" => 1, "fooBars" => [{"bazBaz" => "value"}, {"blahBlah" => "value"}]}
 snaked_hash = my_hash.to_snake_keys
 # => {"first_key" => 1, "foo_bars" => [{"baz_baz" => "value"}, {"blah_blah" => "value"}]}
@@ -39,8 +50,7 @@ the [Awrence](http://github.com/futurechimp/awrence) gem.
 * Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
 * Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
 
-== Copyright
+## Copyright
 
 Copyright (c) 2013 Dave Hrycyszyn. See LICENSE.txt for
 further details.
-
