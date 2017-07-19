@@ -1,6 +1,6 @@
 # Plissken
 
-[![Gem Version](https://badge.fury.io/rb/filta.svg)](https://badge.fury.io/rb/filta)
+[![Gem Version](https://badge.fury.io/rb/plissken.svg)](https://badge.fury.io/rb/plissken)
 
 Have you ever needed to automatically convert JSON-style `camelBack` or `CamelCase` hash keys into more Rubyish `snake_case`?
 
