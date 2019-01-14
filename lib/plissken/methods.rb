@@ -2,7 +2,6 @@
 
 module Plissken
   module Methods
-
     # Recursively converts CamelCase and camelBack JSON-style hash keys to
     # Rubyish snake_case, suitable for use during instantiation of Ruby
     # model attributes.
@@ -24,27 +23,28 @@ module Plissken
       Hash[value.map { |k, v| [underscore_key(k), to_snake_keys(v)] }]
     end
 
-    def underscore_key(k)
-      if k.is_a? Symbol
+    def underscore_key(key)
+      if key.is_a? Symbol
         underscore(k.to_s).to_sym
-      elsif k.is_a? String
-        underscore(k)
+      elsif key.is_a? String
+        underscore(key)
       else
-        k # Plissken can't snakify anything except strings and symbols
+        key # Plissken can't snakify anything except strings and symbols
       end
     end
 
     def underscore(string)
       @__memoize_underscore ||= {}
+
       return @__memoize_underscore[string] if @__memoize_underscore[string]
+
       @__memoize_underscore[string] =
-        string.tr('::', '/')
+        string.tr("::", "/")
               .gsub(/([A-Z]+)([A-Z][a-z])/, '\1_\2')
               .gsub(/([a-z\d])([A-Z])/, '\1_\2')
-              .tr('-', '_')
+              .tr("-", "_")
               .downcase
       @__memoize_underscore[string]
     end
-
   end
 end

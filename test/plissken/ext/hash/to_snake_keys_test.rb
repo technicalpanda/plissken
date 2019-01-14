@@ -1,4 +1,6 @@
-require File.expand_path(File.dirname(__FILE__) + "/../../../test_plissken.rb")
+# frozen_string_literal: true
+
+require File.expand_path(File.dirname(__FILE__) + "/../../../test_helper.rb")
 
 describe "Hash" do
   describe "with camelBack keys" do
@@ -42,7 +44,8 @@ describe "Hash" do
                 { "billThePeanut" => "sallyPeanut" },
                 { "sammyThePeanut" => "jillPeanut" }
               ] }
-            ] }
+            ]
+          }
         end
 
         describe "non-destructive snakification" do
@@ -51,8 +54,8 @@ describe "Hash" do
           end
 
           it "recursively snakifies the keys on the top level of the hash" do
-            assert @snaked.keys.include?("apple_type")
-            assert @snaked.keys.include?("vegetable_types")
+            assert @snaked.key?("apple_type")
+            assert @snaked.key?("vegetable_types")
           end
 
           it "leaves the values on the top level alone" do
@@ -89,7 +92,7 @@ describe "Hash" do
     describe "which are symbols" do
       describe "in the simplest case" do
         before do
-          @hash = { :firstKey => "fooBar" }
+          @hash = { firstKey: "fooBar" }
         end
 
         describe "non-destructive snakification" do
@@ -118,15 +121,16 @@ describe "Hash" do
       describe "containing an array of other hashes" do
         before do
           @hash = {
-            :appleType => "Granny Smith",
-            :vegetableTypes => [
-              { :potatoType => "Golden delicious" },
-              { :otherTuberType => "peanut" },
-              { :peanutNamesAndSpouses => [
-                { :billThePeanut => "sallyPeanut" },
-                { :sammyThePeanut => "jillPeanut" }
+            appleType: "Granny Smith",
+            vegetableTypes: [
+              { potatoType: "Golden delicious" },
+              { otherTuberType: "peanut" },
+              { peanutNamesAndSpouses: [
+                { billThePeanut: "sallyPeanut" },
+                { sammyThePeanut: "jillPeanut" }
               ] }
-            ] }
+            ]
+          }
         end
 
         describe "non-destructive snakification" do
@@ -135,8 +139,8 @@ describe "Hash" do
           end
 
           it "recursively snakifies the keys on the top level of the hash" do
-            assert @snaked.keys.include?(:apple_type)
-            assert @snaked.keys.include?(:vegetable_types)
+            assert @snaked.key?(:apple_type)
+            assert @snaked.key?(:vegetable_types)
           end
 
           it "leaves the values on the top level alone" do
@@ -178,7 +182,7 @@ describe "Hash" do
     end
 
     it "doesn't get snaked, although it does get downcased" do
-      assert @snaked.keys.include? "with spaces"
+      assert @snaked.key?("with spaces")
     end
   end
 end
