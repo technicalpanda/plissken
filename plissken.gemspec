@@ -21,7 +21,8 @@ Gem::Specification.new do |s|
     "VERSION"
   ]
 
-  s.add_development_dependency "minitest", "~> 4.7"
-  s.add_development_dependency "minitest-reporters", "~> 0.14"
+  s.add_development_dependency "minitest", "~> 5.0"
+  s.add_development_dependency "minitest-fail-fast", "~> 0.1"
+  s.add_development_dependency "minitest-reporters", "~> 1.3"
   s.add_development_dependency "rake", "~> 12.0"
 end
