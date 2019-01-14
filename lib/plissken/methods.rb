@@ -25,7 +25,7 @@ module Plissken
 
     def underscore_key(key)
       if key.is_a? Symbol
-        underscore(k.to_s).to_sym
+        underscore(key.to_s).to_sym
       elsif key.is_a? String
         underscore(key)
       else
