@@ -1,19 +1,7 @@
 AllCops:
-  TargetRubyVersion: 2.6
-
-# Use double quotes ALL THE TIME!!!
-Style/StringLiterals:
-  EnforcedStyle: double_quotes
-
-# Disable Style/Documentation because...
-Style/Documentation:
-  Enabled: false
-
-# Increase line length to 120
-Metrics/LineLength:
-  Max: 120
-
-# Exclude class and method length for test
+  TargetRubyVersion: 2.7
+Layout/LineLength:
+  Max: 120 # Increase line length to 120
 Metrics/BlockLength:
   Exclude:
     - "test/**/*"
@@ -23,3 +11,7 @@ Metrics/ClassLength:
 Metrics/MethodLength:
   Exclude:
     - "test/**/*"
+Style/StringLiterals:
+  EnforcedStyle: double_quotes # Use double quotes ALL THE TIME!!!
+Style/Documentation:
+  Enabled: false # Disable Style/Documentation because...
