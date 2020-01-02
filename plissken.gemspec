@@ -1,32 +1,27 @@
 # frozen_string_literal: true
 
-$LOAD_PATH.push File.expand_path("lib", __dir__)
-
-# Maintain your gem's version:
+lib = File.expand_path("lib", __dir__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "plissken/version"
 
-Gem::Specification.new do |s|
-  s.name        = "plissken"
-  s.version     = Plissken::VERSION
-  s.authors     = ["Dave Hrycyszyn", "Michael Chrisco", "Stuart Chinery"]
-  s.email       = ["dhrycyszyn@zonedigital.com"]
-  s.homepage    = "https://github.com/futurechimp/plissken"
-  s.summary     = "Snakify your camel keys when working with JSON APIs"
-  s.description = "Have you ever needed to automatically convert JSON-style camelBack or CamelCase "\
-  "hash keys into more Rubyish snake_case?\n\nPlissken to the rescue.\n\nThis gem recursively "\
-  "converts all camelBack or CamelCase keys in a hash structure to snake_case."
-  s.license = "MIT"
+Gem::Specification.new do |spec|
+  spec.authors = ["Dave Hrycyszyn", "Michael Chrisco", "Stuart Chinery"]
+  spec.description = "Have you ever needed to automatically convert JSON-style camelBack or CamelCase "\
+                     "hash keys into more Rubyish snake_case?\n\nPlissken to the rescue.\n\nThis gem recursively "\
+                     "converts all camelBack or CamelCase keys in a hash structure to snake_case."
+  spec.email = ["dave@constructiveproof.com", "stuart.chinery@gmail.com"]
+  spec.files = Dir["lib/**/*", "MIT-LICENSE", "Rakefile", "README.md", "VERSION"]
+  spec.homepage = "https://github.com/futurechimp/plissken"
+  spec.name = "plissken"
+  spec.summary = "Snakify your camel keys when working with JSON APIs"
+  spec.version = Plissken::VERSION
+  spec.license = "MIT"
 
-  s.files = Dir[
-    "lib/**/*",
-    "MIT-LICENSE",
-    "Rakefile",
-    "README.md",
-    "VERSION"
-  ]
-
-  s.add_development_dependency "minitest", "~> 5.0"
-  s.add_development_dependency "minitest-fail-fast", "~> 0.1"
-  s.add_development_dependency "minitest-reporters", "~> 1.3"
-  s.add_development_dependency "rake", "~> 12.0"
+  spec.add_development_dependency "byebug", "~> 11.0"
+  spec.add_development_dependency "minitest", "~> 5.13"
+  spec.add_development_dependency "minitest-fail-fast", "~> 0.1"
+  spec.add_development_dependency "minitest-macos-notification", "~> 0.3"
+  spec.add_development_dependency "minitest-reporters", "~> 1.4"
+  spec.add_development_dependency "rake", "~> 13.0"
+  spec.add_development_dependency "rubocop", "~> 0.78"
 end

@@ -72,9 +72,9 @@ describe "Array" do
 
           it "converts third-level keys" do
             assert @snaked[0]["vegetable_types"].last["peanut_names_and_spouses"]
-              .first.key?("bill_the_peanut")
+                                                .first.key?("bill_the_peanut")
             assert @snaked[0]["vegetable_types"].last["peanut_names_and_spouses"]
-              .last.key?("sammy_the_peanut")
+                                                .last.key?("sammy_the_peanut")
           end
 
           it "leaves third-level values alone" do
@@ -157,9 +157,9 @@ describe "Array" do
 
           it "converts third-level keys" do
             assert @snaked[0][:vegetable_types].last[:peanut_names_and_spouses]
-              .first.key?(:bill_the_peanut)
+                                               .first.key?(:bill_the_peanut)
             assert @snaked[0][:vegetable_types].last[:peanut_names_and_spouses]
-              .last.key?(:sammy_the_peanut)
+                                               .last.key?(:sammy_the_peanut)
           end
 
           it "leaves third-level values alone" do
