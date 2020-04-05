@@ -1,7 +1,7 @@
 AllCops:
   TargetRubyVersion: 2.7
 Layout/LineLength:
-  Max: 120 # Increase line length to 120
+  Max: 120
 Metrics/BlockLength:
   Exclude:
     - "test/**/*"
@@ -11,7 +11,19 @@ Metrics/ClassLength:
 Metrics/MethodLength:
   Exclude:
     - "test/**/*"
-Style/StringLiterals:
-  EnforcedStyle: double_quotes # Use double quotes ALL THE TIME!!!
 Style/Documentation:
-  Enabled: false # Disable Style/Documentation because...
+  Enabled: false
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+# These cops are currently pending and will be enabled by default at some point, but adding for now to stop Rubocop
+# complaining...
+Lint/RaiseException:
+  Enabled: true
+Lint/StructNewOverride:
+  Enabled: true
+Style/HashEachMethods:
+  Enabled: true
+Style/HashTransformKeys:
+  Enabled: true
+Style/HashTransformValues:
+  Enabled: true
