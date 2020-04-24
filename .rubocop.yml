@@ -17,9 +17,13 @@ Style/StringLiterals:
   EnforcedStyle: double_quotes
 # These cops are currently pending and will be enabled by default at some point, but adding for now to stop Rubocop
 # complaining...
+Layout/SpaceAroundMethodCallOperator:
+  Enabled: true
 Lint/RaiseException:
   Enabled: true
 Lint/StructNewOverride:
+  Enabled: true
+Style/ExponentialNotation:
   Enabled: true
 Style/HashEachMethods:
   Enabled: true
