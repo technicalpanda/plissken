@@ -1,5 +1,6 @@
 AllCops:
-  TargetRubyVersion: 2.7
+  NewCops: enable
+  TargetRubyVersion: 2.5
 Layout/LineLength:
   Max: 120
 Metrics/BlockLength:
@@ -15,23 +16,3 @@ Style/Documentation:
   Enabled: false
 Style/StringLiterals:
   EnforcedStyle: double_quotes
-# These cops are currently pending and will be enabled by default at some point, but adding for now to stop Rubocop
-# complaining...
-Layout/EmptyLinesAroundAttributeAccessor:
-  Enabled: true
-Layout/SpaceAroundMethodCallOperator:
-  Enabled: true
-Lint/RaiseException:
-  Enabled: true
-Lint/StructNewOverride:
-  Enabled: true
-Style/ExponentialNotation:
-  Enabled: true
-Style/HashEachMethods:
-  Enabled: true
-Style/HashTransformKeys:
-  Enabled: true
-Style/HashTransformValues:
-  Enabled: true
-Style/SlicingWithRange:
-  Enabled: true

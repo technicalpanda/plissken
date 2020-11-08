@@ -24,9 +24,10 @@ module Plissken
     end
 
     def underscore_key(key)
-      if key.is_a? Symbol
+      case key
+      when Symbol
         underscore(key.to_s).to_sym
-      elsif key.is_a? String
+      when String
         underscore(key)
       else
         key # Plissken can't snakify anything except strings and symbols

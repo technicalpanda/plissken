@@ -13,6 +13,7 @@ Gem::Specification.new do |spec|
   spec.files = Dir["lib/**/*", "MIT-LICENSE", "Rakefile", "README.md", "VERSION"]
   spec.homepage = "https://github.com/futurechimp/plissken"
   spec.name = "plissken"
+  spec.required_ruby_version = ">= 2.5"
   spec.summary = "Snakify your camel keys when working with JSON APIs"
   spec.version = Plissken::VERSION
   spec.license = "MIT"

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require File.expand_path(File.dirname(__FILE__) + "/../../../test_helper.rb")
+require File.expand_path("#{File.dirname(__FILE__)}/../../../test_helper.rb")
 
 describe "Array" do
   describe "with camelBack keys" do
