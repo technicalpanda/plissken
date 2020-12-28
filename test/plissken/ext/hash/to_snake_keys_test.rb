@@ -144,7 +144,7 @@ describe "Hash" do
           end
 
           it "leaves the values on the top level alone" do
-            assert_equal(@snaked[:apple_type], "Granny Smith")
+            assert_equal("Granny Smith", @snaked[:apple_type])
           end
 
           it "converts second-level keys" do
