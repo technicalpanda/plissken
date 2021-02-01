@@ -1,7 +1,7 @@
 # Plissken
 
 [![Gem Version](https://badge.fury.io/rb/plissken.svg)](https://badge.fury.io/rb/plissken)
-![CI Build](https://github.com/technicalpanda/plissken/workflows/.github/workflows/ci.yml/badge.svg)
+![CI](https://github.com/technicalpanda/plissken/workflows/.github/workflows/CI/badge.svg)
 
 Have you ever needed to automatically convert JSON-style `camelBack` or `CamelCase` hash keys into more Rubyish `snake_case`?
 
