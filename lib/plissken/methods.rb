@@ -20,7 +20,7 @@ module Plissken
     private
 
     def snake_hash(value)
-      Hash[value.map { |k, v| [underscore_key(k), to_snake_keys(v)] }]
+      value.map { |k, v| [underscore_key(k), to_snake_keys(v)] }.to_h
     end
 
     def underscore_key(key)
