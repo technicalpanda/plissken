@@ -18,15 +18,4 @@ Gem::Specification.new do |spec|
   spec.summary = "Snakify your camel keys when working with JSON APIs"
   spec.version = Plissken::VERSION
   spec.license = "MIT"
-
-  spec.add_development_dependency "byebug", "~> 11.1"
-  spec.add_development_dependency "minitest", "~> 5.14"
-  spec.add_development_dependency "minitest-fail-fast", "~> 0.1"
-  spec.add_development_dependency "minitest-macos-notification", "~> 0.3"
-  spec.add_development_dependency "minitest-reporters", "~> 1.4"
-  spec.add_development_dependency "rake", "~> 13.0"
-  spec.add_development_dependency "rubocop", "~> 1.7"
-  spec.add_development_dependency "rubocop-minitest", "~> 0.10"
-  spec.add_development_dependency "rubocop-rake", "~> 0.5"
-  spec.metadata["rubygems_mfa_required"] = "true"
 end
