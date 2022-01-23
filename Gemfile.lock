@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    plissken (2.0.0)
+    plissken (2.0.1)
 
 GEM
   remote: https://rubygems.org/
