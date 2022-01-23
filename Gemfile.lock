@@ -23,7 +23,7 @@ GEM
       builder
       minitest (>= 5.0)
       ruby-progressbar
-    os (1.1.1)
+    os (1.1.4)
     parallel (1.21.0)
     parser (3.1.0.0)
       ast (~> 2.4.1)
@@ -66,4 +66,4 @@ DEPENDENCIES
   rubocop-rake (~> 0.5)
 
 BUNDLED WITH
-   2.2.17
+   2.2.33
