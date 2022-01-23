@@ -1,10 +1,21 @@
 name: CI
+
 on: [push, pull_request]
+
 jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+          ruby-version: "3.0.3"
+      - run: bundle exec rubocop
   test:
     strategy:
       matrix:
-        ruby: [2.5, 2.6, 2.7, 3.0]
+        ruby: [2.7, 3.0]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -13,4 +24,3 @@ jobs:
           bundler-cache: true
           ruby-version: ${{ matrix.ruby }}
       - run: bundle exec rake test
-      - run: bundle exec rubocop

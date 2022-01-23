@@ -9,6 +9,10 @@ Plissken to the rescue!
 
 This gem recursively converts all camelBack or CamelCase keys in either a Hash structure, or an Array of Hashes, to snake_case.
 
+## Requirements
+
+* Ruby >= 2.7
+
 ## Installation
 
 Add this to your Gemfile:
