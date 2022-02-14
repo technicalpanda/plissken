@@ -11,7 +11,7 @@ group :development do
   gem "minitest-macos-notification", "~> 1.0"
   gem "minitest-reporters", "~> 1.4"
   gem "rake", "~> 13.0"
-  gem "rubocop", "~> 1.7"
+  gem "rubocop", "~> 1.25"
   gem "rubocop-minitest", "~> 0.10"
   gem "rubocop-rake", "~> 0.5"
 end
