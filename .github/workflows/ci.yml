@@ -10,7 +10,7 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
-          ruby-version: "3.0.3"
+          ruby-version: "3.1.2"
       - run: bundle exec rubocop
   test:
     strategy:
