@@ -6,8 +6,8 @@ require "plissken/version"
 
 Gem::Specification.new do |spec|
   spec.authors = ["Dave Hrycyszyn", "Stuart Chinery"]
-  spec.description = "Have you ever needed to automatically convert JSON-style camelBack or CamelCase hash keys into "\
-                     "more Rubyish snake_case?\n\nPlissken to the rescue.\n\nThis gem recursively converts all "\
+  spec.description = "Have you ever needed to automatically convert JSON-style camelBack or CamelCase hash keys into " \
+                     "more Rubyish snake_case?\n\nPlissken to the rescue.\n\nThis gem recursively converts all " \
                      "camelBack or CamelCase keys in a hash structure to snake_case."
   spec.email = ["dave@constructiveproof.com", "code@technicalpanda.co.uk"]
   spec.files = Dir["lib/**/*", "MIT-LICENSE", "Rakefile", "README.md", "VERSION"]
