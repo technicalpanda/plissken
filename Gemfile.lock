@@ -44,7 +44,7 @@ GEM
       unicode-display_width (>= 1.4.0, < 3.0)
     rubocop-ast (1.19.1)
       parser (>= 3.1.1.0)
-    rubocop-minitest (0.20.1)
+    rubocop-minitest (0.21.0)
       rubocop (>= 0.90, < 2.0)
     rubocop-rake (0.6.0)
       rubocop (~> 1.0)
@@ -64,7 +64,7 @@ DEPENDENCIES
   plissken!
   rake (~> 13.0)
   rubocop (~> 1.32)
-  rubocop-minitest (~> 0.20)
+  rubocop-minitest (~> 0.21)
   rubocop-rake (~> 0.5)
 
 BUNDLED WITH
