@@ -30,7 +30,7 @@ GEM
       ast (~> 2.4.1)
     rainbow (3.1.1)
     rake (13.0.6)
-    regexp_parser (2.5.0)
+    regexp_parser (2.6.0)
     rexml (3.2.5)
     rubocop (1.36.0)
       json (~> 2.3)
@@ -44,13 +44,13 @@ GEM
       unicode-display_width (>= 1.4.0, < 3.0)
     rubocop-ast (1.21.0)
       parser (>= 3.1.1.0)
-    rubocop-minitest (0.21.1)
+    rubocop-minitest (0.22.2)
       rubocop (>= 0.90, < 2.0)
     rubocop-rake (0.6.0)
       rubocop (~> 1.0)
     ruby-progressbar (1.11.0)
     terminal-notifier (2.0.0)
-    unicode-display_width (2.2.0)
+    unicode-display_width (2.3.0)
 
 PLATFORMS
   ruby
@@ -64,7 +64,7 @@ DEPENDENCIES
   plissken!
   rake (~> 13.0)
   rubocop (~> 1.36)
-  rubocop-minitest (~> 0.21)
+  rubocop-minitest (~> 0.22)
   rubocop-rake (~> 0.5)
 
 BUNDLED WITH
