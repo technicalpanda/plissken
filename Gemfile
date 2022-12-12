@@ -12,6 +12,6 @@ group :development do
   gem "minitest-reporters", "~> 1.4"
   gem "rake", "~> 13.0"
   gem "rubocop", "~> 1.39"
-  gem "rubocop-minitest", "~> 0.24"
+  gem "rubocop-minitest", "~> 0.25"
   gem "rubocop-rake", "~> 0.5"
 end
