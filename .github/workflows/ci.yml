@@ -1,6 +1,9 @@
 name: CI
 
-on: [push, pull_request]
+on:
+  push:
+    paths-ignore:
+      - 'README.md'
 
 jobs:
   lint:
@@ -10,7 +13,6 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
-          ruby-version: "3.2.0"
       - run: bundle exec rubocop
   test:
     strategy:
