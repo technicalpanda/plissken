@@ -15,7 +15,7 @@ GEM
     minitest (5.22.3)
     minitest-fail-fast (0.1.0)
       minitest (~> 5)
-    minitest-macos-notification (1.0.1)
+    minitest-macos-notification (2.0.0)
       minitest (~> 5.14)
       minitest-reporters (~> 1.4)
       os (~> 1.0)
@@ -64,7 +64,7 @@ DEPENDENCIES
   byebug (~> 11.1)
   minitest (~> 5.22)
   minitest-fail-fast (~> 0.1)
-  minitest-macos-notification (~> 1.0)
+  minitest-macos-notification (~> 2.0)
   minitest-reporters (~> 1.6)
   plissken!
   rake (~> 13.2)
