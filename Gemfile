@@ -9,7 +9,7 @@ group :development do
   gem "minitest", "~> 5.24"
   gem "minitest-fail-fast", "~> 0.1"
   gem "minitest-macos-notification", "~> 2.0"
-  gem "minitest-reporters", "~> 1.6"
+  gem "minitest-reporters", "~> 1.7"
   gem "rake", "~> 13.2"
   gem "rubocop", "~> 1.64"
   gem "rubocop-minitest", "~> 0.35"
