@@ -57,7 +57,7 @@ Plissken works on either string keys or symbolized keys. It has no dependencies,
 # Going the other way
 
 If you've already got `snake_case` and need to `CamelCase` it, you are encouraged to try
-the [Awrence](http://github.com/futurechimp/awrence) gem.
+the [Awrence](http://github.com/technicalpanda/awrence) gem.
 
 ## Contributing
 
