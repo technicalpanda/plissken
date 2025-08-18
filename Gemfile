@@ -6,12 +6,11 @@ gemspec
 
 group :development do
   gem "byebug", "~> 11.1"
-  gem "minitest", "~> 5.25"
-  gem "minitest-fail-fast", "~> 0.1"
-  gem "minitest-macos-notification", "~> 2.0"
-  gem "minitest-reporters", "~> 1.7"
   gem "rake", "~> 13.2"
-  gem "rubocop", "~> 1.73"
-  gem "rubocop-minitest", "~> 0.37"
+  gem "rspec", "~> 3.13"
+  gem "rubocop", "~> 1.74"
+  gem "rubocop-performance", "~> 1.25"
   gem "rubocop-rake", "~> 0.7"
+  gem "rubocop-rspec", "~> 3.6"
+  gem "simplecov", "~> 0.22", require: false
 end
