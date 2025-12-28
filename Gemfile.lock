@@ -68,7 +68,7 @@ GEM
     simplecov_json_formatter (0.1.4)
     unicode-display_width (3.2.0)
       unicode-emoji (~> 4.1)
-    unicode-emoji (4.1.0)
+    unicode-emoji (4.2.0)
 
 PLATFORMS
   ruby
@@ -85,4 +85,4 @@ DEPENDENCIES
   simplecov (~> 0.22)
 
 BUNDLED WITH
-   2.4.1
+  4.0.3
