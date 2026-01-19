@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-      - uses: ruby/setup-ruby@ae195bbe749a7cef685ac729197124a48305c1cb
+      - uses: ruby/setup-ruby@80740b3b13bf9857e28854481ca95a84e78a2bdf
         with:
           bundler-cache: true
       - run: bundle exec rubocop
@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-      - uses: ruby/setup-ruby@ae195bbe749a7cef685ac729197124a48305c1cb
+      - uses: ruby/setup-ruby@80740b3b13bf9857e28854481ca95a84e78a2bdf
         with:
           bundler-cache: true
           ruby-version: ${{ matrix.ruby }}
