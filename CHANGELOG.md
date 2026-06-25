@@ -4,10 +4,14 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
-## [4.0.0] - 2025-01-15
+## [5.0.0] - 2026-06-25
 
 ### Changed
 - Updated Ruby support to 3.3+
+
+## [4.0.0] - 2025-01-15
+
+### Changed
 - Updated dependencies
 - Various CI/CD updates
 
