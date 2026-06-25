@@ -22,7 +22,7 @@ jobs:
           args: --verbose
 
       - name: Upload artifacts
-        uses: softprops/action-gh-release@de2c0eb89ae2a093876385947365aca7b0e5f844
+        uses: softprops/action-gh-release@718ea10b132b3b2eba29c1007bb80653f286566b
         with:
           body_path: CHANGELOG.md
           draft: false
