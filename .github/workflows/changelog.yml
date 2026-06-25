@@ -16,8 +16,11 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Configure git remote
-        run: git remote add origin https://github.com/${{ github.repository }}.git || true
+      - name: Set git remote
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+          git remote set-url origin https://github.com/${{ github.repository }}.git
 
       - name: Generate changelog with git-cliff
         uses: orhun/git-cliff-action@4d0efd7c7a4b55484abf71c29a29712192adebdb
@@ -26,6 +29,7 @@ jobs:
           args: --verbose
 
       - name: Upload artifacts
+        if: startsWith(github.ref, 'refs/tags/')
         uses: softprops/action-gh-release@718ea10b132b3b2eba29c1007bb80653f286566b
         with:
           body_path: CHANGELOG.md
