@@ -8,9 +8,9 @@ group :development do
   gem "byebug", "~> 12.0"
   gem "rake", "~> 13.3"
   gem "rspec", "~> 3.13"
-  gem "rubocop", "~> 1.82"
+  gem "rubocop", "~> 1.84"
   gem "rubocop-performance", "~> 1.26"
   gem "rubocop-rake", "~> 0.7"
-  gem "rubocop-rspec", "~> 3.8"
+  gem "rubocop-rspec", "~> 3.9"
   gem "simplecov", "~> 0.22", require: false
 end
