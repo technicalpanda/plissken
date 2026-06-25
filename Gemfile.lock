@@ -7,9 +7,11 @@ GEM
   remote: https://rubygems.org/
   specs:
     ast (2.4.3)
-    byebug (12.0.0)
+    byebug (13.0.0)
+      reline (>= 0.6.0)
     diff-lcs (1.6.2)
     docile (1.4.1)
+    io-console (0.8.2)
     json (2.20.0)
     language_server-protocol (3.17.0.5)
     lint_roller (1.1.0)
@@ -22,6 +24,8 @@ GEM
     rainbow (3.1.1)
     rake (13.4.2)
     regexp_parser (2.12.0)
+    reline (0.6.3)
+      io-console (~> 0.5)
     rspec (3.13.2)
       rspec-core (~> 3.13.0)
       rspec-expectations (~> 3.13.0)
@@ -75,7 +79,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  byebug (~> 12.0)
+  byebug (~> 13.0)
   plissken!
   rake (~> 13.4)
   rspec (~> 3.13)
