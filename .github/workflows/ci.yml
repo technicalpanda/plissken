@@ -10,18 +10,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-      - uses: ruby/setup-ruby@3ff19f5e2baf30647122352b96108b1fbe250c64
+      - uses: ruby/setup-ruby@9eb537ca036ebaed86729dcb9309076e4c5c3b74
         with:
           bundler-cache: true
       - run: bundle exec rubocop
   test:
     strategy:
       matrix:
-        ruby: [3.2, 3.3, 3.4, 4.0]
+        ruby: [3.3, 3.4, 4.0]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-      - uses: ruby/setup-ruby@3ff19f5e2baf30647122352b96108b1fbe250c64
+      - uses: ruby/setup-ruby@9eb537ca036ebaed86729dcb9309076e4c5c3b74
         with:
           bundler-cache: true
           ruby-version: ${{ matrix.ruby }}
