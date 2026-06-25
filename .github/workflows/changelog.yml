@@ -15,6 +15,9 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Configure git remote
+        run: git remote add origin https://github.com/${{ github.repository }}.git || true
+
       - name: Generate changelog with git-cliff
         uses: orhun/git-cliff-action@4d0efd7c7a4b55484abf71c29a29712192adebdb
         with:
