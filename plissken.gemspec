@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
   spec.homepage = "https://github.com/technicalpanda/plissken"
   spec.metadata["rubygems_mfa_required"] = "true"
   spec.name = "plissken"
-  spec.required_ruby_version = ">= 3.2"
+  spec.required_ruby_version = ">= 3.3"
   spec.summary = "Snakify your camel keys when working with JSON APIs"
   spec.version = Plissken::VERSION
   spec.license = "MIT"

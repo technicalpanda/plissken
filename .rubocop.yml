@@ -5,7 +5,7 @@ plugins:
 
 AllCops:
   NewCops: enable
-  TargetRubyVersion: 3.2
+  TargetRubyVersion: 3.3
 Layout/LineLength:
   Max: 120
 Metrics/BlockLength:
