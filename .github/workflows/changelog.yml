@@ -16,7 +16,7 @@ jobs:
           fetch-depth: 0
 
       - name: Generate changelog
-        uses: ardalanamini/auto-changelog@506d604cdb8ec964c260a43c4e2f594ba30bfecc
+        uses: ardalanamini/auto-changelog@d1bf07e4b9aa751c458406bb50fc9908929c9b86
         id: changelog
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
